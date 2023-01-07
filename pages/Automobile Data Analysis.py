@@ -9,7 +9,6 @@ st.set_page_config(
     layout='wide'
 )
 
-import os)
 years = ['2002','2003','2004','2005','2006','2007']
 @st.cache
 def load_data():
