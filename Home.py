@@ -4,7 +4,7 @@ import streamlit as st
 
 st.set_page_config(page_title='Global Warming',layout='wide')
 st.image('images/gw.jpg')
-st.title('IMPACT OF GLOBAL WARMING by Umesh Kumar Maurya')
+st.title('IMPACT OF GLOBAL WARMING (Umesh Kumar Maurya)')
 st.info('Facts Related to the Analysis on Global Warming :')
 st.markdown('1. Increase in the Greenhouse Gases like Co2, So2, CFCs and etc.')
 st.markdown('2. Increase in the Automobiles and Industry has increased the Pollution.')
