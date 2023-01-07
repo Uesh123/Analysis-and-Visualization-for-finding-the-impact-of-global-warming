@@ -14,7 +14,7 @@ Years=['1985','1986','1987','1988','1989','1990','1991','1992','1993','1994','19
 '2016']
 
 def load_data():
-    df=pd.read_csv('..\\data\\electricity_generation_per_person.csv')
+    df=pd.read_csv('data/electricity_generation_per_person.csv')
     df.rename({'geo':'Country'},axis=1,inplace=True)
     df.set_index('Country',inplace=True)
     df.sort_values('Country',inplace=True)

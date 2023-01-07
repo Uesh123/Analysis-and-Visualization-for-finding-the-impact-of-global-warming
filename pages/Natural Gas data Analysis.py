@@ -17,7 +17,7 @@ Years=['1970','1971','1972','1973','1974','1975','1976','1977','1978','1979','19
 '2014','2015','2016']
 @st.cache
 def load_data():
-    df=pd.read_csv('..\\data\\natural_gas_production_per_person.csv')
+    df=pd.read_csv('data/natural_gas_production_per_person.csv')
     df.rename(columns={'geo':'Country'},inplace=True)
     df.set_index('Country',inplace=True)
     df['Total'] = df[Years].sum(axis=1)

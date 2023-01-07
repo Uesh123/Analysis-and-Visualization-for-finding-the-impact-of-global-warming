@@ -18,7 +18,7 @@ Years=['1960','1961','1962','1963','1964','1965','1966','1967','1968','1969',
 
 @st.cache
 def load_data():
-    df=pd.read_csv('..\\data\\industry_percent_of_gdp.csv')
+    df=pd.read_csv('data/industry_percent_of_gdp.csv')
     df.rename(columns={'geo':'Country'},inplace=True)
     df.set_index('Country',inplace=True)
     df['Total'] = df[Years].sum(axis=1)

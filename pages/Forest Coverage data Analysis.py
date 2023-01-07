@@ -15,7 +15,7 @@ Years=['1990','1991','1992','1993','1994','1995','1996','1997','1998','1999',
 
 @st.cache
 def load_data():
-    df=pd.read_csv('..\\data\\forest_coverage_percent.csv')
+    df=pd.read_csv('data/forest_coverage_percent.csv')
     df.rename({'geo':'Country'},axis=1,inplace=True)
     df.set_index('Country',inplace=True)
     df.sort_values('Country',inplace=True)

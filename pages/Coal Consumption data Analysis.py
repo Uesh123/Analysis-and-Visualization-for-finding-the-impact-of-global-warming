@@ -16,7 +16,7 @@ Years=['1965','1966','1967','1968','1969','1970','1971','1972','1973','1974','19
 '2012','2013','2014','2015','2016']
 
 def load_data():
-    df=pd.read_csv('..\\data\\coal_consumption_per_cap.csv')
+    df=pd.read_csv('data/coal_consumption_per_cap.csv')
     df.rename({'geo':'Country'},axis=1,inplace=True)
     df.set_index('Country',inplace=True)
     df.sort_values('Country',inplace=True)
