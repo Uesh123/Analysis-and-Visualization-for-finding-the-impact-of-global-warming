@@ -9,8 +9,9 @@ st.set_page_config(
     layout='wide'
 )
 
+import os
+st.write(os.listdir('data'))
 years = ['2002','2003','2004','2005','2006','2007']
-
 @st.cache
 def load_data():
     df=pd.read_csv('..\\data\\cars_trucks_and_buses_per_1000_persons.csv')
