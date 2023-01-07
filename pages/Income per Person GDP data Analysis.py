@@ -28,7 +28,7 @@ Years=['1800','1801','1802','1803','1804','1805','1806','1807','1808','1809','18
 
 @st.cache
 def load_data():
-    df=pd.read_csv('data\\income_per_person_gdppercapita_ppp_inflation_adjusted.csv')
+    df=pd.read_csv('..\\data\\income_per_person_gdppercapita_ppp_inflation_adjusted.csv')
     df.rename(columns={'geo':'Country'},inplace=True)
     df.set_index('Country',inplace=True)
     df['Total'] = df[Years].sum(axis=1)

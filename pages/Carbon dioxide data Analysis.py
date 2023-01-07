@@ -22,7 +22,7 @@ years=['1895','1896','1897','1898','1899','1900','1901','1902','1903','1904','19
 
 @st.cache
 def load_data():
-    df=pd.read_csv('data\\co2_emissions_tonnes_per_person.csv')
+    df=pd.read_csv('..\\data\\co2_emissions_tonnes_per_person.csv')
     df.rename({'geo':'Country'},axis=1,inplace=True)
     df.set_index('Country',inplace=True)
     df.drop(['1800','1801','1802', '1803', '1804', '1805', '1806', '1807', '1808', '1809', '1810', '1811', '1812', '1813',

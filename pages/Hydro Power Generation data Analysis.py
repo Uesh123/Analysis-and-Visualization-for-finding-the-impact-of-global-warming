@@ -17,7 +17,7 @@ Years=['1971','1972','1973','1974','1975','1976','1977','1978','1979','1980','19
 
 @st.cache
 def load_data():
-    df=pd.read_csv('data\\hydro_power_generation_per_person.csv')
+    df=pd.read_csv('..\data\\hydro_power_generation_per_person.csv')
     df.rename(columns={'geo':'Country'},inplace=True)
     df.set_index('Country',inplace=True)
     df.drop(['1960','1961','1962','1963','1964','1965','1966','1967','1968','1969','1970','2011'],axis=1,inplace=True)

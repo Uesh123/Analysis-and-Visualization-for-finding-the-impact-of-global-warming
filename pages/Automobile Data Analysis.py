@@ -13,7 +13,7 @@ years = ['2002','2003','2004','2005','2006','2007']
 
 @st.cache
 def load_data():
-    df=pd.read_csv('data\\cars_trucks_and_buses_per_1000_persons.csv')
+    df=pd.read_csv('..\\data\\cars_trucks_and_buses_per_1000_persons.csv')
     df.rename(columns={'geo':'Country'},inplace=True)
     df.set_index('Country',inplace=True)
     df['Total'] = df[years].sum(axis=1)
