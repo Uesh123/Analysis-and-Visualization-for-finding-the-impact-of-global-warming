@@ -17,3 +17,6 @@ st.markdown('8. Average wildlife Population have decreased by 60 percent in just
 
 
 st.info('For better Conclusion see the Visualization Pages')
+
+import os
+st.write(os.listdir('data'))
